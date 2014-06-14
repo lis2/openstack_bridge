@@ -1,7 +1,6 @@
 # OpenstackBridge
 
-Basic integration with Openstack swift
-
+Basic integration with Openstack Swift. Implemented simple operation like exists?, read, create and delete.
 
 ## Installation
 

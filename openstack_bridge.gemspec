@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["kotlarek.krzysztof@gmail.com"]
   spec.description   = %q{Openstack ruby integration}
   spec.summary       = %q{Ruby integration with openstack, especially swift}
-  spec.homepage      = ""
+  spec.homepage      = "git@github.com:lis2/openstack_bridge.git"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
