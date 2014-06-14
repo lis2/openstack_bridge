@@ -1,9 +1,10 @@
 module OpenstackBridge
-  class Swift < Struct.new(host, user, password, tenant, container)
+  class Swift < Struct.new(:host, :user, :password, :tenant, :container)
     attr_accessor :authentication_response
 
-    def initialize
-      self.authentication_response = OpenstackBridge::Authentication.new.response
+    def initialize(*)
+      super
+      self.authentication_response = OpenstackBridge::Authentication.new(host, user, password, tenant).response
     end
 
     def token

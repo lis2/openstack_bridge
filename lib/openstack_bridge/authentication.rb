@@ -1,8 +1,9 @@
 module OpenstackBridge
-  class Authentication < Struct.new(:host, username, password, tenant)
+  class Authentication < Struct.new(:host, :username, :password, :tenant)
     attr_accessor :response
 
-    def initialize
+    def initialize(*)
+      super
       request = HTTPI::Request.new
       request.url = host
       request.body = auth_hash.to_json
