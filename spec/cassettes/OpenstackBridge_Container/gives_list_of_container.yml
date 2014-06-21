@@ -1,0 +1,119 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://192.168.0.11:5000/v2.0/tokens
+    body:
+      encoding: UTF-8
+      string: '{"auth":{"passwordCredentials":{"username":"admin","password":"q1w2"},"tenantName":"demo"}}'
+    headers:
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 21 Jun 2014 09:40:37 GMT
+      Server:
+      - Apache/2.4.7 (Ubuntu)
+      Vary:
+      - X-Auth-Token
+      Content-Length:
+      - '7210'
+      Content-Type:
+      - application/json
+    body:
+      encoding: ASCII-8BIT
+      string: '{"access": {"token": {"issued_at": "2014-06-21T09:40:37.564826", "expires":
+        "2014-06-21T10:40:37Z", "id": "PKIZ_eJy1WVt3oswSfe9fcd6zZoWLJvHhPIBcxLGboFzsfgsQgQZiEi9cfv0pUCeXmWRMzvclK0ttobuqdu1dVeTHD_hRddMi_xnjRffhB8KWNX926PTnmlnpPiKKE43XsPbAx2OdrceKo9eaq8zUpEjSPFGZg3Ul0askubxWk_wJpXlmjipBVSszgcWNalm3V5NNRgPC2ZK0Fl8n981UCKVtEWbWlQXf3cF6HPj5UjIE1F1gcavCrrPFGt1ibnhYy6-IplzhNtoRlwq2ZklWViVW6Q8is2jYEmd2pmSYKzUiY6EimdBg36mxthbgryXiOpuNlewucPoLI7NOqeSvQ6nO2dLqv4tNf0eD4cECMBG-IDwqiyo2i31vqjkUQ7PaWONpEZZGFpp-3l0bT6YiW3TWFP1n2MCqaYBFzIucuWqBNaclkp_hUpeY6Um0jWQ7wDVpU35wY5iGgddbxkx_i8JmOlp1Oz6QInpgj2CqRpfzNDRHD90JgbzJWDDMI3P0GD7M29MaDebbu2DoIy-v-t3uJnMh0tb7WasPcTaoCU92eDyosbsekDYSZjJtZu3v1qJPzX2YFkw6xmQ8XbAgfgyl4W1YescgQxDZcgrRrP3vWoLOC9wh4hbXuxsrGugN0XBju84AYUkfUFeRiUsgWF7DTCwTTquDC6pIy_qRiv7CHfdurOPJvLKzmz1282bGdQnZ40EFb2qbJzJpnX3MrT1kY0pbr7GDeYFNr4LTZBZYDXUZBI9xcGVIW122TZyhlS8ck2VehVKxiydkFZrF7k7u0lUNlz3E82FkHrCn0mgbTXyBLazuvh2igVj0_pXDfVzqWZcTkJmvNjxsBGspM8XHsHjrDnrtz1t36FnuoNf-dNhGpf9wF4x2vVXFMQ_y0e5ocpeNRdSls3GwBP0psl-xBP0psq-pTANPYK7TMj4tSauLRCMFKUE_StqQAHd54EmET1Pc5gcXJj5Qt-C-P8WH4KZCPFGuZs1NbbvWDrt0MOMKvOpXthbJiGQjCWc3DQ4MTlxrCJlYMVcRcBsXFDYm5RxOhORqC47daECBvT20pb9jE3WPOkJE4mgDr89RA_AY27hXnElRQeA6uCRQIjEMfDjogP0L9OQRAd6gA7SxHiChJp9z_0-EQx8wrv036dy-ZihootLagS5RHqe4BLhcZwgUz1jpyNhloHusZBpJGeTEnxh6RiJ1DMXZR6RDf2Xd8mTyixqH5Uii3ToEHn0n8q9jgyA4LYbfc6P-Pujok6i_bPxLE-el7eoic6mEJZaDJjYg60aKTQu0cFrgwJIYdxriKuI3NLE77-NofxRsFLUH-kIB3R5zv8VAmNlYvT4RpufLgSewZuRhUOxObEWf0hXYeSRQcwjooD_VO6qWKw0LdAzSDup9A1ZsztKBl40fEeuDY0GlAa5LGC52JFbqAtOmqW06FeHekGkFNBjOEDoXGY_7G6s4mIIEkLOq8xDzHOgu9jrxOumWUt3pwfaQfWIffeF-qR7FotjSIC5-ayqkOg1LUpz0A_0_adxRHGFNqYDj9b-RyoM3m_9KZ6XGrV9S7gmYz1OE23kOjUJqu35BXb8kpgObeBLANTgnndE7AangVBAQ_eyURi8CUu_jYF6G8nQLXVqfde9SfM0CQ3iv3ui70QeBlbr4oD-1bl_p3NA5UH2aBydTvmzJS13QK2jra-rqUFChY-fznARGRrkj2m4kM26J2CUlbdP8m3WhazD0rzUYX5E11AUpLkebuCvZ75hH4WZo6T-t3OiL2Lcz-ddY0M4EI0edQH6Xid1h6PzTyCaU_fwdMyXEQF2w63XFBEo8MNM0MtulsFkO_ZJTUTcSoPB8WGjQ5xDifST5TVwWMEPivdMTznmDEjqn-rAAN79pY7f2T5X3TrqEb_EBkEPfge61JeidiH7ZEvQWV6MgWg7-wYVa0sJA3tI2GTKOZRDfDPpqKH8kh66uPcGK_tZAvBVc5zdmor8NVX9jJnqPOagyvzP9Fqb09DjJv2uw04IunV-zFTp3uPrILWRryrdmpb9NbZV9qFB7x_e9hfHxQIJ-n0gOJx47l4q0-RDaG5lpCuSFIxB3mtmm3hKTZdT1WpiZSEpcuDl727qco1BYgxj0mScYvq-nq6_MzCd40bkNZShNn1hAhNmSCAD1LwFGJ35HcvzIHpx_anYGIrWe3D-t4J_DjP6G858P8I6NiLVDx8bxBFuD3TkMm9YAu9aAcipgTc3sABjoxpxpMPpyKtluUZ5QQ1-ATTw2Xb1bX0bhDqAFNx_jSf6m9emq8zNbFm1sdnl_nIsf_LZ76AYbXR_ev2bjod0_auIehUDdrud91_IeYzJNKWdlJ3WkKzga9BBuUtsayYAXAgscARTJa7FmyfjAgQYG7eJluHipA6ARaWyMwFKD34mjfQyzQpRNR-gwmbwq6X09GJyC9LvpD_36li3nkFgGWLD49ZhzdboZNqoOyTPaHJ5eqqFVOgIMGgPWMZbHJXVhlgC4obCo8GFaUgn01vUAYzXrA8Q7EuWQD3lXdDOgMsDoDIkGJ_OCk8ATwH0Y-1qDW4U4Wi2FOklMA1uWmjiWqrhqhI2oHrfKVE2IryrUVQrfxc6g0hSq-Y5jaYrvQ6dKiljTbaxUpiJ6ulpVhh8MATqn1riCDzevser7O6jUAp4nlZH0G2iaMpJRLEc7tkzTcKlu2GLIQ0noniVX44pOqcUsJfA0VbFUrAjmePFkLqxQ1hxdVRxPUcFapEzbYPuUCVbK7M2g2l2J1jx35nF64T87F5P7rbgVl_unQVDUQezeXq8WIVmL81xujSVJVtCprpfzmWb5z4s0FtRUXfh8vcN2Tlfh0imfm-Zx1T7dJM1ugm-fNtWNeyHtFZZuF9r44Vo1LtF-SItnc02S0Xqwdnezgm_YrbFLAm-V27tmjS0nsteLopqulzaONtcT67ZxRXu-9Z8vi4CjfHVRy-3tzeUT_ZldEeORaDD83t8FD5mVPi4qPzSz-bauBWPkpqN54l_H9zKr1aU_L25gLkXXzwNSG3SR3CjaT6b5y4gPXetm9_z8VK_E-qd5VXiXysXlxeVkOigmT7WqF3eXAb_3V-uLS2BjMvNWP6-1-0bmz4Uviy65ZQN_8F_UP_zXifbyj4D_AcczISk=",
+        "tenant": {"description": null, "enabled": true, "id": "21ac529de0e0437eb2a6de6c779c178c",
+        "name": "demo"}}, "serviceCatalog": [{"endpoints": [{"adminURL": "http://192.168.0.11:8774/v2/21ac529de0e0437eb2a6de6c779c178c",
+        "region": "RegionOne", "internalURL": "http://192.168.0.11:8774/v2/21ac529de0e0437eb2a6de6c779c178c",
+        "id": "11ac0aa24329483a8a0753bee2dc7660", "publicURL": "http://192.168.0.11:8774/v2/21ac529de0e0437eb2a6de6c779c178c"}],
+        "endpoints_links": [], "type": "compute", "name": "nova"}, {"endpoints": [{"adminURL":
+        "http://192.168.0.11:8776/v2/21ac529de0e0437eb2a6de6c779c178c", "region":
+        "RegionOne", "internalURL": "http://192.168.0.11:8776/v2/21ac529de0e0437eb2a6de6c779c178c",
+        "id": "ae4e43f2f71543e6b02f25c83e662a39", "publicURL": "http://192.168.0.11:8776/v2/21ac529de0e0437eb2a6de6c779c178c"}],
+        "endpoints_links": [], "type": "volumev2", "name": "cinderv2"}, {"endpoints":
+        [{"adminURL": "http://192.168.0.11:8774/v3", "region": "RegionOne", "internalURL":
+        "http://192.168.0.11:8774/v3", "id": "039a6b7a2d3e49e0bfd716bdffd3af87", "publicURL":
+        "http://192.168.0.11:8774/v3"}], "endpoints_links": [], "type": "computev3",
+        "name": "novav3"}, {"endpoints": [{"adminURL": "http://192.168.0.11:3333",
+        "region": "RegionOne", "internalURL": "http://192.168.0.11:3333", "id": "4f915e663fd9427aa0b2dbe1b6f42505",
+        "publicURL": "http://192.168.0.11:3333"}], "endpoints_links": [], "type":
+        "s3", "name": "s3"}, {"endpoints": [{"adminURL": "http://192.168.0.11:9292",
+        "region": "RegionOne", "internalURL": "http://192.168.0.11:9292", "id": "2478cc1946fa4d2a8d0659d9acd90970",
+        "publicURL": "http://192.168.0.11:9292"}], "endpoints_links": [], "type":
+        "image", "name": "glance"}, {"endpoints": [{"adminURL": "http://192.168.0.11:8000/v1",
+        "region": "RegionOne", "internalURL": "http://192.168.0.11:8000/v1", "id":
+        "0135fb5424a34d29a95ea5f4d1656118", "publicURL": "http://192.168.0.11:8000/v1"}],
+        "endpoints_links": [], "type": "cloudformation", "name": "heat"}, {"endpoints":
+        [{"adminURL": "http://192.168.0.11:8776/v1/21ac529de0e0437eb2a6de6c779c178c",
+        "region": "RegionOne", "internalURL": "http://192.168.0.11:8776/v1/21ac529de0e0437eb2a6de6c779c178c",
+        "id": "10371a1434124d5abb45977f2513fc8d", "publicURL": "http://192.168.0.11:8776/v1/21ac529de0e0437eb2a6de6c779c178c"}],
+        "endpoints_links": [], "type": "volume", "name": "cinder"}, {"endpoints":
+        [{"adminURL": "http://192.168.0.11:8773/services/Admin", "region": "RegionOne",
+        "internalURL": "http://192.168.0.11:8773/services/Cloud", "id": "06fce152506b4d0ab961699dd0a740b5",
+        "publicURL": "http://192.168.0.11:8773/services/Cloud"}], "endpoints_links":
+        [], "type": "ec2", "name": "ec2"}, {"endpoints": [{"adminURL": "http://192.168.0.11:8004/v1/21ac529de0e0437eb2a6de6c779c178c",
+        "region": "RegionOne", "internalURL": "http://192.168.0.11:8004/v1/21ac529de0e0437eb2a6de6c779c178c",
+        "id": "1e491616d83143c89f3734b3e8ccd9a3", "publicURL": "http://192.168.0.11:8004/v1/21ac529de0e0437eb2a6de6c779c178c"}],
+        "endpoints_links": [], "type": "orchestration", "name": "heat"}, {"endpoints":
+        [{"adminURL": "http://192.168.0.11:8080", "region": "RegionOne", "internalURL":
+        "http://192.168.0.11:8080/v1/AUTH_21ac529de0e0437eb2a6de6c779c178c", "id":
+        "0799167d0524452b8a34fba533ca59c2", "publicURL": "http://192.168.0.11:8080/v1/AUTH_21ac529de0e0437eb2a6de6c779c178c"}],
+        "endpoints_links": [], "type": "object-store", "name": "swift"}, {"endpoints":
+        [{"adminURL": "http://192.168.0.11:35357/v2.0", "region": "RegionOne", "internalURL":
+        "http://192.168.0.11:5000/v2.0", "id": "214a6b8128b6400b9cd97cd1566699f2",
+        "publicURL": "http://192.168.0.11:5000/v2.0"}], "endpoints_links": [], "type":
+        "identity", "name": "keystone"}], "user": {"username": "admin", "roles_links":
+        [], "id": "ab6f0044ab81418183b524ed4be30273", "roles": [{"name": "heat_stack_owner"},
+        {"name": "admin"}], "name": "admin"}, "metadata": {"is_admin": 0, "roles":
+        ["d4928e78b7fa406b810fa2fcf655690b", "22a98196b4b24504944af9c5e4be271c"]}}}'
+    http_version: 
+  recorded_at: Sat, 21 Jun 2014 09:44:07 GMT
+- request:
+    method: get
+    uri: http://192.168.0.11:8080/v1/AUTH_21ac529de0e0437eb2a6de6c779c178c/test_container
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      X-Auth-Token:
+      - PKIZ_eJy1WVt3oswSfe9fcd6zZoWLJvHhPIBcxLGboFzsfgsQgQZiEi9cfv0pUCeXmWRMzvclK0ttobuqdu1dVeTHD_hRddMi_xnjRffhB8KWNX926PTnmlnpPiKKE43XsPbAx2OdrceKo9eaq8zUpEjSPFGZg3Ul0askubxWk_wJpXlmjipBVSszgcWNalm3V5NNRgPC2ZK0Fl8n981UCKVtEWbWlQXf3cF6HPj5UjIE1F1gcavCrrPFGt1ibnhYy6-IplzhNtoRlwq2ZklWViVW6Q8is2jYEmd2pmSYKzUiY6EimdBg36mxthbgryXiOpuNlewucPoLI7NOqeSvQ6nO2dLqv4tNf0eD4cECMBG-IDwqiyo2i31vqjkUQ7PaWONpEZZGFpp-3l0bT6YiW3TWFP1n2MCqaYBFzIucuWqBNaclkp_hUpeY6Um0jWQ7wDVpU35wY5iGgddbxkx_i8JmOlp1Oz6QInpgj2CqRpfzNDRHD90JgbzJWDDMI3P0GD7M29MaDebbu2DoIy-v-t3uJnMh0tb7WasPcTaoCU92eDyosbsekDYSZjJtZu3v1qJPzX2YFkw6xmQ8XbAgfgyl4W1YescgQxDZcgrRrP3vWoLOC9wh4hbXuxsrGugN0XBju84AYUkfUFeRiUsgWF7DTCwTTquDC6pIy_qRiv7CHfdurOPJvLKzmz1282bGdQnZ40EFb2qbJzJpnX3MrT1kY0pbr7GDeYFNr4LTZBZYDXUZBI9xcGVIW122TZyhlS8ck2VehVKxiydkFZrF7k7u0lUNlz3E82FkHrCn0mgbTXyBLazuvh2igVj0_pXDfVzqWZcTkJmvNjxsBGspM8XHsHjrDnrtz1t36FnuoNf-dNhGpf9wF4x2vVXFMQ_y0e5ocpeNRdSls3GwBP0psl-xBP0psq-pTANPYK7TMj4tSauLRCMFKUE_StqQAHd54EmET1Pc5gcXJj5Qt-C-P8WH4KZCPFGuZs1NbbvWDrt0MOMKvOpXthbJiGQjCWc3DQ4MTlxrCJlYMVcRcBsXFDYm5RxOhORqC47daECBvT20pb9jE3WPOkJE4mgDr89RA_AY27hXnElRQeA6uCRQIjEMfDjogP0L9OQRAd6gA7SxHiChJp9z_0-EQx8wrv036dy-ZihootLagS5RHqe4BLhcZwgUz1jpyNhloHusZBpJGeTEnxh6RiJ1DMXZR6RDf2Xd8mTyixqH5Uii3ToEHn0n8q9jgyA4LYbfc6P-Pujok6i_bPxLE-el7eoic6mEJZaDJjYg60aKTQu0cFrgwJIYdxriKuI3NLE77-NofxRsFLUH-kIB3R5zv8VAmNlYvT4RpufLgSewZuRhUOxObEWf0hXYeSRQcwjooD_VO6qWKw0LdAzSDup9A1ZsztKBl40fEeuDY0GlAa5LGC52JFbqAtOmqW06FeHekGkFNBjOEDoXGY_7G6s4mIIEkLOq8xDzHOgu9jrxOumWUt3pwfaQfWIffeF-qR7FotjSIC5-ayqkOg1LUpz0A_0_adxRHGFNqYDj9b-RyoM3m_9KZ6XGrV9S7gmYz1OE23kOjUJqu35BXb8kpgObeBLANTgnndE7AangVBAQ_eyURi8CUu_jYF6G8nQLXVqfde9SfM0CQ3iv3ui70QeBlbr4oD-1bl_p3NA5UH2aBydTvmzJS13QK2jra-rqUFChY-fznARGRrkj2m4kM26J2CUlbdP8m3WhazD0rzUYX5E11AUpLkebuCvZ75hH4WZo6T-t3OiL2Lcz-ddY0M4EI0edQH6Xid1h6PzTyCaU_fwdMyXEQF2w63XFBEo8MNM0MtulsFkO_ZJTUTcSoPB8WGjQ5xDifST5TVwWMEPivdMTznmDEjqn-rAAN79pY7f2T5X3TrqEb_EBkEPfge61JeidiH7ZEvQWV6MgWg7-wYVa0sJA3tI2GTKOZRDfDPpqKH8kh66uPcGK_tZAvBVc5zdmor8NVX9jJnqPOagyvzP9Fqb09DjJv2uw04IunV-zFTp3uPrILWRryrdmpb9NbZV9qFB7x_e9hfHxQIJ-n0gOJx47l4q0-RDaG5lpCuSFIxB3mtmm3hKTZdT1WpiZSEpcuDl727qco1BYgxj0mScYvq-nq6_MzCd40bkNZShNn1hAhNmSCAD1LwFGJ35HcvzIHpx_anYGIrWe3D-t4J_DjP6G858P8I6NiLVDx8bxBFuD3TkMm9YAu9aAcipgTc3sABjoxpxpMPpyKtluUZ5QQ1-ATTw2Xb1bX0bhDqAFNx_jSf6m9emq8zNbFm1sdnl_nIsf_LZ76AYbXR_ev2bjod0_auIehUDdrud91_IeYzJNKWdlJ3WkKzga9BBuUtsayYAXAgscARTJa7FmyfjAgQYG7eJluHipA6ARaWyMwFKD34mjfQyzQpRNR-gwmbwq6X09GJyC9LvpD_36li3nkFgGWLD49ZhzdboZNqoOyTPaHJ5eqqFVOgIMGgPWMZbHJXVhlgC4obCo8GFaUgn01vUAYzXrA8Q7EuWQD3lXdDOgMsDoDIkGJ_OCk8ATwH0Y-1qDW4U4Wi2FOklMA1uWmjiWqrhqhI2oHrfKVE2IryrUVQrfxc6g0hSq-Y5jaYrvQ6dKiljTbaxUpiJ6ulpVhh8MATqn1riCDzevser7O6jUAp4nlZH0G2iaMpJRLEc7tkzTcKlu2GLIQ0noniVX44pOqcUsJfA0VbFUrAjmePFkLqxQ1hxdVRxPUcFapEzbYPuUCVbK7M2g2l2J1jx35nF64T87F5P7rbgVl_unQVDUQezeXq8WIVmL81xujSVJVtCprpfzmWb5z4s0FtRUXfh8vcN2Tlfh0imfm-Zx1T7dJM1ugm-fNtWNeyHtFZZuF9r44Vo1LtF-SItnc02S0Xqwdnezgm_YrbFLAm-V27tmjS0nsteLopqulzaONtcT67ZxRXu-9Z8vi4CjfHVRy-3tzeUT_ZldEeORaDD83t8FD5mVPi4qPzSz-bauBWPkpqN54l_H9zKr1aU_L25gLkXXzwNSG3SR3CjaT6b5y4gPXetm9_z8VK_E-qd5VXiXysXlxeVkOigmT7WqF3eXAb_3V-uLS2BjMvNWP6-1-0bmz4Uviy65ZQN_8F_UP_zXifbyj4D_AcczISk=
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 21 Jun 2014 09:40:37 GMT
+      Server:
+      - Apache/2.4.7 (Ubuntu)
+      X-Container-Object-Count:
+      - '1'
+      X-Storage-Policy:
+      - Policy-0
+      Accept-Ranges:
+      - bytes
+      X-Container-Bytes-Used:
+      - '12'
+      X-Timestamp:
+      - '1403340136.76386'
+      X-Trans-Id:
+      - tx738a233392614e26bd17d-0053a55315
+      Content-Length:
+      - '14'
+      Content-Type:
+      - text/plain; charset=utf-8
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        test_file.txt
+    http_version: 
+  recorded_at: Sat, 21 Jun 2014 09:44:08 GMT
+recorded_with: VCR 2.9.2

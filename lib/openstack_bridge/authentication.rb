@@ -11,6 +11,11 @@ module OpenstackBridge
       self.response = JSON.parse(HTTPI.post(request, :curb).body)
     end
 
+    def token
+      self.response['access']['token']['id']
+    end
+
+    private
     def auth_hash
       {
         "auth" => {

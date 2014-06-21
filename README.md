@@ -19,11 +19,17 @@ Or install it yourself as:
 ## Usage
 
 ```ruby
-  swift = OpenstackBridge::Swift.new('localhost', 'lis2', 'password', 'dev', 'container_name')
-  swift.exists?('readme.txt')
-  swift.read('readme.txt')
-  swift.delete('readme.txt')
-  swift.create('readme.txt', 'new content')
+  swift = OpenstackBridge::Swift.new('localhost', 'lis2', 'password', 'dev')
+  swift.create('test_container')
+  swift.containers # => ['test_container']
+  swift.delete('test_container') 
+
+  container = swift.container['test_container']
+  container.exists?('readme.txt')
+  container.read('readme.txt')
+  container.delete('readme.txt')
+  container.create('readme.txt', 'new content')
+  container.objects # => ['readme.txt']
 ```
 
 ## Contributing

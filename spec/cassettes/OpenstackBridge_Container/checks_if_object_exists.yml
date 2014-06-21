@@ -1,0 +1,108 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://192.168.0.11:5000/v2.0/tokens
+    body:
+      encoding: UTF-8
+      string: '{"auth":{"passwordCredentials":{"username":"admin","password":"q1w2"},"tenantName":"demo"}}'
+    headers:
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 21 Jun 2014 09:40:35 GMT
+      Server:
+      - Apache/2.4.7 (Ubuntu)
+      Vary:
+      - X-Auth-Token
+      Content-Length:
+      - '7202'
+      Content-Type:
+      - application/json
+    body:
+      encoding: ASCII-8BIT
+      string: '{"access": {"token": {"issued_at": "2014-06-21T09:40:35.228281", "expires":
+        "2014-06-21T10:40:35Z", "id": "PKIZ_eJy1WVt3oswSfe9fcd5nzQqCmPhwHkAuwtjNYLjY_RYgERpQEy9cfv0pUCeXmWRMzvclK0ttobuqdu1dVeT7d_hRddMi_5ng2-7Dd4Qta_7kUvvHmlnpISaKG0_WsLbik4nO1hPF1WvNU2bqslim-VJlLtaVpV4tl1fX6jJ_RGmemeNKUNXKXMLiVrWsn6PpNqMh4WxBWouvl_eNLUTirogya2TBd3ewnoRBvhANAXUXWNyqsOfusEZ3mBs-1vIR0ZQRbv095tYQ82VtZdXSKoNhbBYNW-DMyZQMc6VGZCJUJBMaHLg11tYC_LUkWGeziZLdhW5_YWzWKRWDdSTWOVtY_XeJGexpKB8tABPhC8LjsqgSszj0ppryIDKrrTWxi6g0ssgM8u7aZGoP2G1nTdF_hg2smoZ4gHmRM08tsOa2RAwyXOoiM32RtrHkhLgmbcqPbshpFPq9ZcwMdihq7PFDt-OKFPGKbcBUjS7maWSOV90JobTNWCjnsTneRKt5e16j4Xx3F8oB8vOq3-1uOhdibX2YtbqMs2FN-HKPJ8Mae-shaWNhJtFm1v5uLfrQ3JVdMPEUk4l9y8JkE4nyz6j0T0GGILKFDdGsg69agi4L3DHiFte7Gysa6g3RcON47hBhUR9ST5GIRyBYfsNMLBFOq6ML6oCW9YYOgltv0ruxTqbzysluDtjLmxnXReRMhhW8qR2-lEjrHhJuHSAbU9r6jRPOC2z6FZwmsdBqqMcgeIyDKzJtdckxcYYeAuGULPMqEot9MiUPkVns76QuXdVo0UM8l2PziD0Vx7t4Ggjs1uru2yMaDorev1I-JKWedTkBmfliw-NGsJYyc7CJitfuoJf-vHaHXuQOeulPh21cBqu7cLzvrSpOeZCP9yeTu2ws4i6djaMl6E-R_Ywl6E-RfUllGvoC89yWcbskrT4gGilICfpR0oaEuMsDXyTcTnGbH12YBkDdggeBjY_BTYVkqoxmzU3teNYee3Q44wq86iNHiyVEsrGIs5sGhwYnniVDJlbMUwTcJgWFjUk5hxMhudqCYy8eUmBvD20Z7NlUPaCOEPFgvIXXp7gBeIxd0ivOtKggcB1cIijRIAoDOOiI_TP0ZIMAb9AB2lgrSKjpx9z_E-HQO4xr_006ty8ZCpqotE6oi5QnKS4BLs-VgeIZK10Jewx0j5VMIymDnPgTQy9IpI6hOHuPdOivrFucTX5W46gci7Rbh8Cjr0T-ZWwQBKfF8Htp1N8GHX0Q9eeNf2nivHQ8fcA8KmKR5aCJDci6kWLTAi20CxxaIuNuQzxl8AVN7M57P9rvBRvF7ZG-UEB3p9xvMRBmNlGvz4Tp-XLkCawZeRQW-zNb0Yd0BXaeCNQcAzrsT_VPquWJcoFOQdpDvW_Aiu1FOvC88QaxPjgWVBrguojhYldkpS4wzU4d060I92WmFdBguDJ0LhKe9DdWSWiDBJCLqrOMeQ50H_Q68TLpFmLd6cHumH2DPvrC_UI9iUWxo2FS_NZUiHUalaQ46wf6f9K4ozjCmlIBx-t_I5WHrzb_lc5KjdugpNwXMJ-nCLfzHBqF1PGCgnpBSUwXNvFFgGt4STqjNwJSwakgIPrFKY2eBaQ-JOG8jCR7B11an3VvUnzNQkN4q97oq9EHgRW7-KA_tW6f6dzQJVB9mAdnUz5tyXNd0CvcxjX1dCio0LHzeU5CI6PcHTheLDFuDbBHStqm-RfrQtdg6J9rMD4ja6gLUlKOt0lXst8wj8LN0NJ_WLnRJ7FvZ9KvsaCdCUaOOoH8KhO7w9Dlp5FtJAX5G2aKiIG6YM_vigmUeGCmaWSOR2GzHPolt6JeLEDhebfQoI8hxIdYDJqkLGCGxAe3J5z7CiV0SfVhIW5-08Zu7Z8q7510CV_iAyCHvgLdS0vQGxH9tCXoNa5GQbQc_IMLtWULA3lL26XMOJZAfDPoq6H8kRy6uvYMK_pbA_FacN3fmIn-NlT9jZnoLeagyvzODFqY0tPTJP-mwU4LunB_zVbo0uHqPbeQoylfmpX-NrVVzrFCHdwg8G-N9wcS9PtEcjzx1LlUpM1laG8kpimQF65APDtzTL0lJsuo57cwM5GUeHBz9rp1uUShsAYx6DNPMIJATx8-MzOf4UWXNpSRaD-ykAizBREA6l8CjM78jqVkw1buPzU7A5FaX-qfVvCPYUZ_w_nPB_inRsTao1PjeIatwd4chk1riD1rSDkVsKZmTggM9BLONBh9ORUdryjPqKFPwDY4NV29W59G4Q6gBTc3yTR_1fp01fmJLYo2Mbu8P83Fq6DtHrrBRtfH9y_ZeGz3T5p4QBFQt-t537S8p5jYKeWs7KSOdAVHgx7CW9aORjLghcBCVwBF8lusWRI-cqCBQbt4Hi6e6wBoRJoYY7DU4HeD8SGBWSHO7DE6TiYvSnpfD4bnIP1u-qpf37HFHBLLAAtufz3mfDjfDBtVx-QZb49PL9XIKl0BBo0h6xjLk5J6MEsA3FBYVPhgl1QEvfV8wFjN-gDxjkQ55EPeFd0MqAwwujLR4GRecBL6ArgPY19rcKsYjB8WQr1cmga2LHXpWqriqTE24nrSKra6JIGqUE8pAg-7w0pTqBa4rqUpQQCdKikSTXewUpnKwNfVqjKCUAbo3FrjCj7evMZqEOyhUgt4vqyMZb-BpiljCSVSvGeLNI0W6pbdyjwShe5ZcjWpqE0tZimhr6mKpWJFMCe3j-atFUmaq6uK6ysqWIsUCIIT5U0iPAjB0HpIB9heF9virrHqUTu5luTNdfhjFfo3ysChantdP64ErfAcvG6KQ5Oi-6pt2LzSS2la5jyZUnMefpsuhk_ug-GFo_m8-vm49xZQ6FwhGN0XxTxcudvw5ipahiuBX6FvNJzIXiscppm148Xcd8tvkWJud9naGEjeFjJqUBQ_Y5vfH67Y6DGe7EzvClcPo8f06gemKGxlW_CFsMA02c-yh53ize5WWd58ewq4ncuttl_WnvpQZ7JkZDfLK755akXRm5i7GzHZ6-jG1LflbEyv9YG7cza7qTSzNKNR183V0v75qM9GT_ezHzsrrFPDfboJyI1vGPsrO1Wkb-PmPkcuHzFjrh1s_8rnWlbRjfq0EYX_ov7hv060538E_A9kMSC4",
+        "tenant": {"description": null, "enabled": true, "id": "21ac529de0e0437eb2a6de6c779c178c",
+        "name": "demo"}}, "serviceCatalog": [{"endpoints": [{"adminURL": "http://192.168.0.11:8774/v2/21ac529de0e0437eb2a6de6c779c178c",
+        "region": "RegionOne", "internalURL": "http://192.168.0.11:8774/v2/21ac529de0e0437eb2a6de6c779c178c",
+        "id": "11ac0aa24329483a8a0753bee2dc7660", "publicURL": "http://192.168.0.11:8774/v2/21ac529de0e0437eb2a6de6c779c178c"}],
+        "endpoints_links": [], "type": "compute", "name": "nova"}, {"endpoints": [{"adminURL":
+        "http://192.168.0.11:8776/v2/21ac529de0e0437eb2a6de6c779c178c", "region":
+        "RegionOne", "internalURL": "http://192.168.0.11:8776/v2/21ac529de0e0437eb2a6de6c779c178c",
+        "id": "ae4e43f2f71543e6b02f25c83e662a39", "publicURL": "http://192.168.0.11:8776/v2/21ac529de0e0437eb2a6de6c779c178c"}],
+        "endpoints_links": [], "type": "volumev2", "name": "cinderv2"}, {"endpoints":
+        [{"adminURL": "http://192.168.0.11:8774/v3", "region": "RegionOne", "internalURL":
+        "http://192.168.0.11:8774/v3", "id": "039a6b7a2d3e49e0bfd716bdffd3af87", "publicURL":
+        "http://192.168.0.11:8774/v3"}], "endpoints_links": [], "type": "computev3",
+        "name": "novav3"}, {"endpoints": [{"adminURL": "http://192.168.0.11:3333",
+        "region": "RegionOne", "internalURL": "http://192.168.0.11:3333", "id": "4f915e663fd9427aa0b2dbe1b6f42505",
+        "publicURL": "http://192.168.0.11:3333"}], "endpoints_links": [], "type":
+        "s3", "name": "s3"}, {"endpoints": [{"adminURL": "http://192.168.0.11:9292",
+        "region": "RegionOne", "internalURL": "http://192.168.0.11:9292", "id": "2478cc1946fa4d2a8d0659d9acd90970",
+        "publicURL": "http://192.168.0.11:9292"}], "endpoints_links": [], "type":
+        "image", "name": "glance"}, {"endpoints": [{"adminURL": "http://192.168.0.11:8000/v1",
+        "region": "RegionOne", "internalURL": "http://192.168.0.11:8000/v1", "id":
+        "0135fb5424a34d29a95ea5f4d1656118", "publicURL": "http://192.168.0.11:8000/v1"}],
+        "endpoints_links": [], "type": "cloudformation", "name": "heat"}, {"endpoints":
+        [{"adminURL": "http://192.168.0.11:8776/v1/21ac529de0e0437eb2a6de6c779c178c",
+        "region": "RegionOne", "internalURL": "http://192.168.0.11:8776/v1/21ac529de0e0437eb2a6de6c779c178c",
+        "id": "10371a1434124d5abb45977f2513fc8d", "publicURL": "http://192.168.0.11:8776/v1/21ac529de0e0437eb2a6de6c779c178c"}],
+        "endpoints_links": [], "type": "volume", "name": "cinder"}, {"endpoints":
+        [{"adminURL": "http://192.168.0.11:8773/services/Admin", "region": "RegionOne",
+        "internalURL": "http://192.168.0.11:8773/services/Cloud", "id": "06fce152506b4d0ab961699dd0a740b5",
+        "publicURL": "http://192.168.0.11:8773/services/Cloud"}], "endpoints_links":
+        [], "type": "ec2", "name": "ec2"}, {"endpoints": [{"adminURL": "http://192.168.0.11:8004/v1/21ac529de0e0437eb2a6de6c779c178c",
+        "region": "RegionOne", "internalURL": "http://192.168.0.11:8004/v1/21ac529de0e0437eb2a6de6c779c178c",
+        "id": "1e491616d83143c89f3734b3e8ccd9a3", "publicURL": "http://192.168.0.11:8004/v1/21ac529de0e0437eb2a6de6c779c178c"}],
+        "endpoints_links": [], "type": "orchestration", "name": "heat"}, {"endpoints":
+        [{"adminURL": "http://192.168.0.11:8080", "region": "RegionOne", "internalURL":
+        "http://192.168.0.11:8080/v1/AUTH_21ac529de0e0437eb2a6de6c779c178c", "id":
+        "0799167d0524452b8a34fba533ca59c2", "publicURL": "http://192.168.0.11:8080/v1/AUTH_21ac529de0e0437eb2a6de6c779c178c"}],
+        "endpoints_links": [], "type": "object-store", "name": "swift"}, {"endpoints":
+        [{"adminURL": "http://192.168.0.11:35357/v2.0", "region": "RegionOne", "internalURL":
+        "http://192.168.0.11:5000/v2.0", "id": "214a6b8128b6400b9cd97cd1566699f2",
+        "publicURL": "http://192.168.0.11:5000/v2.0"}], "endpoints_links": [], "type":
+        "identity", "name": "keystone"}], "user": {"username": "admin", "roles_links":
+        [], "id": "ab6f0044ab81418183b524ed4be30273", "roles": [{"name": "heat_stack_owner"},
+        {"name": "admin"}], "name": "admin"}, "metadata": {"is_admin": 0, "roles":
+        ["d4928e78b7fa406b810fa2fcf655690b", "22a98196b4b24504944af9c5e4be271c"]}}}'
+    http_version: 
+  recorded_at: Sat, 21 Jun 2014 09:44:05 GMT
+- request:
+    method: head
+    uri: http://192.168.0.11:8080/v1/AUTH_21ac529de0e0437eb2a6de6c779c178c/test_container/no_file.txt
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      X-Auth-Token:
+      - PKIZ_eJy1WVt3oswSfe9fcd5nzQqCmPhwHkAuwtjNYLjY_RYgERpQEy9cfv0pUCeXmWRMzvclK0ttobuqdu1dVeT7d_hRddMi_5ng2-7Dd4Qta_7kUvvHmlnpISaKG0_WsLbik4nO1hPF1WvNU2bqslim-VJlLtaVpV4tl1fX6jJ_RGmemeNKUNXKXMLiVrWsn6PpNqMh4WxBWouvl_eNLUTirogya2TBd3ewnoRBvhANAXUXWNyqsOfusEZ3mBs-1vIR0ZQRbv095tYQ82VtZdXSKoNhbBYNW-DMyZQMc6VGZCJUJBMaHLg11tYC_LUkWGeziZLdhW5_YWzWKRWDdSTWOVtY_XeJGexpKB8tABPhC8LjsqgSszj0ppryIDKrrTWxi6g0ssgM8u7aZGoP2G1nTdF_hg2smoZ4gHmRM08tsOa2RAwyXOoiM32RtrHkhLgmbcqPbshpFPq9ZcwMdihq7PFDt-OKFPGKbcBUjS7maWSOV90JobTNWCjnsTneRKt5e16j4Xx3F8oB8vOq3-1uOhdibX2YtbqMs2FN-HKPJ8Mae-shaWNhJtFm1v5uLfrQ3JVdMPEUk4l9y8JkE4nyz6j0T0GGILKFDdGsg69agi4L3DHiFte7Gysa6g3RcON47hBhUR9ST5GIRyBYfsNMLBFOq6ML6oCW9YYOgltv0ruxTqbzysluDtjLmxnXReRMhhW8qR2-lEjrHhJuHSAbU9r6jRPOC2z6FZwmsdBqqMcgeIyDKzJtdckxcYYeAuGULPMqEot9MiUPkVns76QuXdVo0UM8l2PziD0Vx7t4Ggjs1uru2yMaDorev1I-JKWedTkBmfliw-NGsJYyc7CJitfuoJf-vHaHXuQOeulPh21cBqu7cLzvrSpOeZCP9yeTu2ws4i6djaMl6E-R_Ywl6E-RfUllGvoC89yWcbskrT4gGilICfpR0oaEuMsDXyTcTnGbH12YBkDdggeBjY_BTYVkqoxmzU3teNYee3Q44wq86iNHiyVEsrGIs5sGhwYnniVDJlbMUwTcJgWFjUk5hxMhudqCYy8eUmBvD20Z7NlUPaCOEPFgvIXXp7gBeIxd0ivOtKggcB1cIijRIAoDOOiI_TP0ZIMAb9AB2lgrSKjpx9z_E-HQO4xr_006ty8ZCpqotE6oi5QnKS4BLs-VgeIZK10Jewx0j5VMIymDnPgTQy9IpI6hOHuPdOivrFucTX5W46gci7Rbh8Cjr0T-ZWwQBKfF8Htp1N8GHX0Q9eeNf2nivHQ8fcA8KmKR5aCJDci6kWLTAi20CxxaIuNuQzxl8AVN7M57P9rvBRvF7ZG-UEB3p9xvMRBmNlGvz4Tp-XLkCawZeRQW-zNb0Yd0BXaeCNQcAzrsT_VPquWJcoFOQdpDvW_Aiu1FOvC88QaxPjgWVBrguojhYldkpS4wzU4d060I92WmFdBguDJ0LhKe9DdWSWiDBJCLqrOMeQ50H_Q68TLpFmLd6cHumH2DPvrC_UI9iUWxo2FS_NZUiHUalaQ46wf6f9K4ozjCmlIBx-t_I5WHrzb_lc5KjdugpNwXMJ-nCLfzHBqF1PGCgnpBSUwXNvFFgGt4STqjNwJSwakgIPrFKY2eBaQ-JOG8jCR7B11an3VvUnzNQkN4q97oq9EHgRW7-KA_tW6f6dzQJVB9mAdnUz5tyXNd0CvcxjX1dCio0LHzeU5CI6PcHTheLDFuDbBHStqm-RfrQtdg6J9rMD4ja6gLUlKOt0lXst8wj8LN0NJ_WLnRJ7FvZ9KvsaCdCUaOOoH8KhO7w9Dlp5FtJAX5G2aKiIG6YM_vigmUeGCmaWSOR2GzHPolt6JeLEDhebfQoI8hxIdYDJqkLGCGxAe3J5z7CiV0SfVhIW5-08Zu7Z8q7510CV_iAyCHvgLdS0vQGxH9tCXoNa5GQbQc_IMLtWULA3lL26XMOJZAfDPoq6H8kRy6uvYMK_pbA_FacN3fmIn-NlT9jZnoLeagyvzODFqY0tPTJP-mwU4LunB_zVbo0uHqPbeQoylfmpX-NrVVzrFCHdwg8G-N9wcS9PtEcjzx1LlUpM1laG8kpimQF65APDtzTL0lJsuo57cwM5GUeHBz9rp1uUShsAYx6DNPMIJATx8-MzOf4UWXNpSRaD-ykAizBREA6l8CjM78jqVkw1buPzU7A5FaX-qfVvCPYUZ_w_nPB_inRsTao1PjeIatwd4chk1riD1rSDkVsKZmTggM9BLONBh9ORUdryjPqKFPwDY4NV29W59G4Q6gBTc3yTR_1fp01fmJLYo2Mbu8P83Fq6DtHrrBRtfH9y_ZeGz3T5p4QBFQt-t537S8p5jYKeWs7KSOdAVHgx7CW9aORjLghcBCVwBF8lusWRI-cqCBQbt4Hi6e6wBoRJoYY7DU4HeD8SGBWSHO7DE6TiYvSnpfD4bnIP1u-qpf37HFHBLLAAtufz3mfDjfDBtVx-QZb49PL9XIKl0BBo0h6xjLk5J6MEsA3FBYVPhgl1QEvfV8wFjN-gDxjkQ55EPeFd0MqAwwujLR4GRecBL6ArgPY19rcKsYjB8WQr1cmga2LHXpWqriqTE24nrSKra6JIGqUE8pAg-7w0pTqBa4rqUpQQCdKikSTXewUpnKwNfVqjKCUAbo3FrjCj7evMZqEOyhUgt4vqyMZb-BpiljCSVSvGeLNI0W6pbdyjwShe5ZcjWpqE0tZimhr6mKpWJFMCe3j-atFUmaq6uK6ysqWIsUCIIT5U0iPAjB0HpIB9heF9virrHqUTu5luTNdfhjFfo3ysChantdP64ErfAcvG6KQ5Oi-6pt2LzSS2la5jyZUnMefpsuhk_ug-GFo_m8-vm49xZQ6FwhGN0XxTxcudvw5ipahiuBX6FvNJzIXiscppm148Xcd8tvkWJud9naGEjeFjJqUBQ_Y5vfH67Y6DGe7EzvClcPo8f06gemKGxlW_CFsMA02c-yh53ize5WWd58ewq4ncuttl_WnvpQZ7JkZDfLK755akXRm5i7GzHZ6-jG1LflbEyv9YG7cza7qTSzNKNR183V0v75qM9GT_ezHzsrrFPDfboJyI1vGPsrO1Wkb-PmPkcuHzFjrh1s_8rnWlbRjfq0EYX_ov7hv060538E_A9kMSC4
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Date:
+      - Sat, 21 Jun 2014 09:40:35 GMT
+      Server:
+      - Apache/2.4.7 (Ubuntu)
+      X-Trans-Id:
+      - tx174b54bc3ce44f89a932e-0053a55313
+      Content-Length:
+      - '70'
+      Content-Type:
+      - text/html; charset=UTF-8
+    body:
+      encoding: ASCII-8BIT
+      string: ''
+    http_version: 
+  recorded_at: Sat, 21 Jun 2014 09:44:06 GMT
+recorded_with: VCR 2.9.2

@@ -1,0 +1,77 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://192.168.0.11:5000/v2.0/tokens
+    body:
+      encoding: UTF-8
+      string: '{"auth":{"passwordCredentials":{"username":"admin","password":"q1w2"},"tenantName":"demo"}}'
+    headers:
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 21 Jun 2014 08:43:15 GMT
+      Server:
+      - Apache/2.4.7 (Ubuntu)
+      Vary:
+      - X-Auth-Token
+      Content-Length:
+      - '7202'
+      Content-Type:
+      - application/json
+    body:
+      encoding: ASCII-8BIT
+      string: '{"access": {"token": {"issued_at": "2014-06-21T08:43:15.904124", "expires":
+        "2014-06-21T09:43:15Z", "id": "PKIZ_eJy1WUt7oswS3vevOPt55hkEMXFxFiAXcexmMM2leycwcleTqCC__hSok8tMMibn-5KF2kJ3Vb31vlWFX7_Cn6qbFvnPBN91H74ibFmLB4fNvm-4lR4iojjRZANr63wy0flmojh6o1FlriZlkhaJyh2sK4leJ8m3GzUp7lFaZOa4FlS1NhNYfFQt68do-pgxn-Q8IK2Vb5Kfx5kQirsyzKyRBd8tYT32vSIQDQF1F1i5VWPq7LDGdjg3XKwlI6LhEabu3qaKgKklWFmdWJU3jMzyyAOc2ZmS4VxpEJkINcmEI_ac2qYbAbebhnibbD5RsqXv9BdGZpMy0duEYlPwwOq_i01vz3z5ZAGYCF-QPKrKOjbLQ2-qKQ9Cs360JrMyrIwsNL2iuzaezgb8rrOm7D_DBlbDfDzAeVlwqpZYc1oiehmudJGbrsjaSLJ93JA2zU9uyGnou71l3PR2KDzOxqtuxzUpozXfgqkaCxZpaI7X3Qm-9JhxXy4ic7wN14v2ssb8xW7pyx5yi7rfbTldCJG2OcxbXcbZsCF5sseTYYPpZkjaSJhL7Dhvf7cWvWvuelZy8RyTyeyO-_E2FOUfYeWegwxB5MEMotl4n7UEXRe4U8StXO9urJmvHyFPjjZ1hgiL-pBRRSKUQLDcIzexRHJWn1xQB6xqtmzg3dFJ78Ymni5qO7s9YFoc57kuInsyrOFNY-eJRFrnEOfWAbIxZa17tP1FiU23htMk7ltHRjkEj-fgisxaXbJNnKGVJ5yTZVGHYrmPp2QVmuV-KXXpqoZBD_FCjswT9kwc76KpJ_A7q7tvj5g_KHv_KvkQV3rW5QRk5rMNTxvBWsrNwTYsX7qDnvvz0h12lTvouT8dtlHlrZf-eN9bVZ7zoBjvzyZ32VhGXTobJ0vQnyL7EUvQnyL7nMrMdwVOnZbns4q0-oBopCQV6EfFjsTHXR64IslnKW6LkwtTD6hb5p43w6fgpkI8VUbz421jU2uPKRvOcwVe9ZGtRRIi2VjE2e0R-0ZOqCVDJta8U6E2LhlsTKoFnAjJ1ZY5ptGQAXt7aCtvz6fqAXWEiAbjR3h9iI4Aj7GLe8WZljUEroNLBCUahL4HB52wf4KebBHgDTrAjtYaEmr6Pvf_RDj0BuPaf5PO7XOGgiYqre3rIsvjFFcAF3VkoHjGK0fClIPu8YprJOWQE39i6BWJ1DEUZ2-RDv2VdcHF5Cc1DquxyLp1CDz6TOSfxwZBcFoM_9dG_XXQ0TtRf9r4lyYuKpvqA06ZiEVegCYeQdaNFJsWaOGsxL4l8tw5EqoMPqGJ3XlvR_utYKOoPdEXCujunPstBsLMJ-rNhTA9X048gTWjCP1yf2ErepeuwM4zgY6ngA77U92zalFRLtE5SHuo90ew4vEqHXjaeIt4HxwLKg1wXcRwsSPyShe4Nktt06lJ7spcK6HBcGSsFRKe9DfWsT8DCSBXVWcZ5wXQfdDrxPOkC8Sm04PdKfsGffSFn4F6Fotyx_y4_K2pEJs0rEh50Q_0_6RxR3GENaUGjjf_RioPX2z-K52VBrdexXJXwPkiRbhdFNAopDb1Ska9ipgObOKKANfwmnRGrwSkhlNBQPSrUxo9CUhziP1FFUqzHXRpfda9SvEN9w3htXqjz0YfBFbs4oP-1Lp9pHND10D1bh5cTPmwJU91Qa9xGzWM6lBQnQawLYhvZCx3BjaNJJ5bA0xJxdq0-GRd6BoM_WMNxkdkDXVBiqvxY9yV7FfMY3AztPTvVm70QezbufRrLGjnglGgTiA_y8TuMHT9aeQxlLziFTNFxEFdYDrrigmUeGCmaWQ2ZbBZAf2SUzMaCVB43iw06H0I8SESvWNclTBD4oPTE855gRK6pvpwHx9_08Zu7Z8q7510CZ_iAyCHPgPdc0vQKxH9sCXoJa5GSbQC_IMLtaSFgbxlbSLzHEsgvhn01VD-SAFdXXuBFf2tgXgpuM5vzER_G6r-xkz0GnNQ5Xxpei1M6el5kn_VYKclC5xfsxW6drh6yy1ka8qnZqW_TW21fapQB8fz3Dvj7YEE_T6RnE48dy41aQsZ2huJawrkhSMQOstsU2-JyTNG3RZmJpISCjdnL1uXaxQKaxCDPvMEw_P0dPWRmfkCL7q2oQzF2T33iTAPiABQ_xJgdOF3JMVbvnb-qdkZiNS6Uv-0In8fZvQ3nP98gHtuRKw9OjeOF9iOmC5g2LSGmFpDljMBa2pm-8BAGudcg9E3Z6JNy-qCGvoAbINz09W79WEUlgAtuLmNp8WL1qerzg88KNvY7PL-PBevvbZ76AYb3ZzeP2fjqd0_a-IBhUDdrud91fKeYzJLWc6rTupIV3A06CFo0tgayYAXAvcdARTJbbFmSfjEgSMM2uXTcPFUB0Aj0tgYg6VGvhyMDzHMClE2G6PTZPKspPf1YHgJ0u-mr_v1HQ8WkFgGWHD36zHn6nIzbFSfkmf8eHp6qYZW5QgwaAx5x9g8rhiFWQLghsKiwodZxUTQW-oCxmrWByjvSFRAPhRd0c2AygCjIxMNTs7LnPiuAO7D2NcauVUOxqtAaJLENLBlqYljqQpVI2xEzaRVZmpCPFVhVCk9ip1hrSlM8xzH0hTPg06VlLGm21ipTWXg6mpdG54vA3ROo-UKPt28warn7aFSC3iR1EbSb6BpylhCsRTteZCmYaA-8js5D0Whe5ZcT2o2Yxa3FN_VVMVSsSKYk7t7884KJc3RVcVxFRWsRYqlfLudDupipSffpwEMr6uJEyxvHso6eJCFmTI15w8HZX-ju2GyGtk3UlAvC7tKm1HA1JGEXFcaEvpF39ojrOfGxBHdb0tt56--O_fbJY8j4U7ZrkED1dup-yBRJjdsJhjqw-LHanfLIvQ9i-ayGD3cxtKDTB5K5sblo6X5wm28-fFlY_54yEJ7P8I2DQYsXoT6vR66Qju4v5EaacHHyGxHR22_SUeCvMOjeRMMVvj7hJVuuklu67QZMsfGvk4XwTby3WXxRfhyOxwvb5aPSpLc8DUSrZCEcx1mzGCu_hSc8QgLQ2mSfktmtd7e0_vbw4Y75Ft8a4aOn0yo504m2XhIt4lvf6N3aPX9EVOtWQl2PA3H8sIZjI1x5fwX9Q__daI9_RDwP58tG2g=",
+        "tenant": {"description": null, "enabled": true, "id": "21ac529de0e0437eb2a6de6c779c178c",
+        "name": "demo"}}, "serviceCatalog": [{"endpoints": [{"adminURL": "http://192.168.0.11:8774/v2/21ac529de0e0437eb2a6de6c779c178c",
+        "region": "RegionOne", "internalURL": "http://192.168.0.11:8774/v2/21ac529de0e0437eb2a6de6c779c178c",
+        "id": "11ac0aa24329483a8a0753bee2dc7660", "publicURL": "http://192.168.0.11:8774/v2/21ac529de0e0437eb2a6de6c779c178c"}],
+        "endpoints_links": [], "type": "compute", "name": "nova"}, {"endpoints": [{"adminURL":
+        "http://192.168.0.11:8776/v2/21ac529de0e0437eb2a6de6c779c178c", "region":
+        "RegionOne", "internalURL": "http://192.168.0.11:8776/v2/21ac529de0e0437eb2a6de6c779c178c",
+        "id": "ae4e43f2f71543e6b02f25c83e662a39", "publicURL": "http://192.168.0.11:8776/v2/21ac529de0e0437eb2a6de6c779c178c"}],
+        "endpoints_links": [], "type": "volumev2", "name": "cinderv2"}, {"endpoints":
+        [{"adminURL": "http://192.168.0.11:8774/v3", "region": "RegionOne", "internalURL":
+        "http://192.168.0.11:8774/v3", "id": "039a6b7a2d3e49e0bfd716bdffd3af87", "publicURL":
+        "http://192.168.0.11:8774/v3"}], "endpoints_links": [], "type": "computev3",
+        "name": "novav3"}, {"endpoints": [{"adminURL": "http://192.168.0.11:3333",
+        "region": "RegionOne", "internalURL": "http://192.168.0.11:3333", "id": "4f915e663fd9427aa0b2dbe1b6f42505",
+        "publicURL": "http://192.168.0.11:3333"}], "endpoints_links": [], "type":
+        "s3", "name": "s3"}, {"endpoints": [{"adminURL": "http://192.168.0.11:9292",
+        "region": "RegionOne", "internalURL": "http://192.168.0.11:9292", "id": "2478cc1946fa4d2a8d0659d9acd90970",
+        "publicURL": "http://192.168.0.11:9292"}], "endpoints_links": [], "type":
+        "image", "name": "glance"}, {"endpoints": [{"adminURL": "http://192.168.0.11:8000/v1",
+        "region": "RegionOne", "internalURL": "http://192.168.0.11:8000/v1", "id":
+        "0135fb5424a34d29a95ea5f4d1656118", "publicURL": "http://192.168.0.11:8000/v1"}],
+        "endpoints_links": [], "type": "cloudformation", "name": "heat"}, {"endpoints":
+        [{"adminURL": "http://192.168.0.11:8776/v1/21ac529de0e0437eb2a6de6c779c178c",
+        "region": "RegionOne", "internalURL": "http://192.168.0.11:8776/v1/21ac529de0e0437eb2a6de6c779c178c",
+        "id": "10371a1434124d5abb45977f2513fc8d", "publicURL": "http://192.168.0.11:8776/v1/21ac529de0e0437eb2a6de6c779c178c"}],
+        "endpoints_links": [], "type": "volume", "name": "cinder"}, {"endpoints":
+        [{"adminURL": "http://192.168.0.11:8773/services/Admin", "region": "RegionOne",
+        "internalURL": "http://192.168.0.11:8773/services/Cloud", "id": "06fce152506b4d0ab961699dd0a740b5",
+        "publicURL": "http://192.168.0.11:8773/services/Cloud"}], "endpoints_links":
+        [], "type": "ec2", "name": "ec2"}, {"endpoints": [{"adminURL": "http://192.168.0.11:8004/v1/21ac529de0e0437eb2a6de6c779c178c",
+        "region": "RegionOne", "internalURL": "http://192.168.0.11:8004/v1/21ac529de0e0437eb2a6de6c779c178c",
+        "id": "1e491616d83143c89f3734b3e8ccd9a3", "publicURL": "http://192.168.0.11:8004/v1/21ac529de0e0437eb2a6de6c779c178c"}],
+        "endpoints_links": [], "type": "orchestration", "name": "heat"}, {"endpoints":
+        [{"adminURL": "http://192.168.0.11:8080", "region": "RegionOne", "internalURL":
+        "http://192.168.0.11:8080/v1/AUTH_21ac529de0e0437eb2a6de6c779c178c", "id":
+        "0799167d0524452b8a34fba533ca59c2", "publicURL": "http://192.168.0.11:8080/v1/AUTH_21ac529de0e0437eb2a6de6c779c178c"}],
+        "endpoints_links": [], "type": "object-store", "name": "swift"}, {"endpoints":
+        [{"adminURL": "http://192.168.0.11:35357/v2.0", "region": "RegionOne", "internalURL":
+        "http://192.168.0.11:5000/v2.0", "id": "214a6b8128b6400b9cd97cd1566699f2",
+        "publicURL": "http://192.168.0.11:5000/v2.0"}], "endpoints_links": [], "type":
+        "identity", "name": "keystone"}], "user": {"username": "admin", "roles_links":
+        [], "id": "ab6f0044ab81418183b524ed4be30273", "roles": [{"name": "heat_stack_owner"},
+        {"name": "admin"}], "name": "admin"}, "metadata": {"is_admin": 0, "roles":
+        ["d4928e78b7fa406b810fa2fcf655690b", "22a98196b4b24504944af9c5e4be271c"]}}}'
+    http_version: 
+  recorded_at: Sat, 21 Jun 2014 08:46:38 GMT
+recorded_with: VCR 2.9.2

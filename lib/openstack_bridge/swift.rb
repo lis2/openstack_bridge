@@ -1,49 +1,42 @@
 module OpenstackBridge
   class Swift < Struct.new(:host, :user, :password, :tenant, :container)
-    attr_accessor :authentication_response
+    attr_accessor :authentication
 
     def initialize(*)
       super
-      self.authentication_response = OpenstackBridge::Authentication.new(host, user, password, tenant).response
-    end
-
-    def token
-      self.authentication_response['access']['token']['id']
+      self.authentication = OpenstackBridge::Authentication.new(host, user, password, tenant)
     end
 
     def end_point
-      self.authentication_response['access']['serviceCatalog'].detect {|s| s['name'] == 'swift'}['endpoints'].first['publicURL']
+      self.authentication.response['access']['serviceCatalog'].detect {|s| s['name'] == 'swift'}['endpoints'].first['publicURL']
     end
 
-    def file_path(path)
-      "#{end_point}/#{container}/#{path}"
+    def containers
+      request(:get, "#{end_point}").raw_body.split("\n")
     end
 
-    def exists?(path)
-      request(:head, file_path(path)).code == 200
+    def create(name)
+      request(:put, "#{end_point}/#{name}")
     end
 
-    def read(path)
-      request(:get, file_path(path)).raw_body
+    def delete(name)
+      request(:delete, "#{end_point}/#{name}")
     end
 
-    def delete(path)
-      request(:delete, file_path(path))
+    def container(name)
+      OpenstackBridge::Container.new(self, name)
     end
-
-    def create(path, content)
-      request(:put, file_path(path), content)
-    end
-
 
     def request(method, path, params={}.to_json, httpclient = false)
       request = HTTPI::Request.new
       request.url = path
       request.body = params
       request.headers['Content-Type'] = 'application/json'
-      request.headers['X-Auth-Token'] = token
-      HTTPI.send(method, request, (httpclient ? :httpclient : :curb))
+      request.headers['X-Auth-Token'] = authentication.token
+      response = HTTPI.send(method, request, (httpclient ? :httpclient : :curb))
+      puts response.inspect
+      raise OpenstackBridge::Error.new(self), response.raw_body unless [200, 201, 202, 204].include?(response.code.to_i)
+      response
     end
   end
-
 end
