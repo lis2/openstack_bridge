@@ -1,5 +1,5 @@
 module OpenstackBridge
-  class Swift < Struct.new(:host, :user, :password, :tenant, :container)
+  class Swift < Struct.new(:host, :user, :password, :tenant)
     attr_accessor :authentication
 
     def initialize(*)
