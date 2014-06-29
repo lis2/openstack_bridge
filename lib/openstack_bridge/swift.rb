@@ -5,6 +5,7 @@ module OpenstackBridge
     def initialize(*)
       super
       self.authentication = OpenstackBridge::Authentication.new(host, user, password, tenant)
+      raise "Wrong authentication response" if !self.authentication.response || !self.authentication.response['access']
     end
 
     def end_point
