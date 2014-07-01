@@ -35,7 +35,6 @@ module OpenstackBridge
       request.headers['Content-Type'] = 'application/json'
       request.headers['X-Auth-Token'] = authentication.token
       response = HTTPI.send(method, request, (httpclient ? :httpclient : :curb))
-      puts response.inspect
       raise OpenstackBridge::Error.new(self), response.raw_body unless [200, 201, 202, 204].include?(response.code.to_i)
       response
     end
