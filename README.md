@@ -32,6 +32,9 @@ Or install it yourself as:
   container.objects # => ['readme.txt']
 ```
 
+## Status
+[![Build Status](https://travis-ci.org/lis2/openstack_bridge.svg?branch=master)](https://travis-ci.org/lis2/openstack_bridge.svg?branch=master)
+
 ## Contributing
 
 1. Fork it
