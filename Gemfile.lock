@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    openstack_bridge (0.0.2)
+    openstack_bridge (0.0.4)
       curb
       httpi
       json
@@ -14,7 +14,7 @@ GEM
       safe_yaml (~> 1.0.0)
     curb (0.8.5)
     diff-lcs (1.2.5)
-    httpi (2.2.1)
+    httpi (2.2.4)
       rack
     json (1.8.1)
     rack (1.5.2)
