@@ -25,6 +25,7 @@ module OpenstackBridge
     end
 
     def container(name)
+      create(name) unless containers.include?(name)
       OpenstackBridge::Container.new(self, name)
     end
 
