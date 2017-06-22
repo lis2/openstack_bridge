@@ -5,7 +5,7 @@ module OpenstackBridge
     def initialize(*)
       super
       request = HTTPI::Request.new
-      request.url = host
+      request.url = tokens_url host
       request.body = auth_hash.to_json
       request.headers['Content-Type'] = 'application/json'
       self.response = JSON.parse(HTTPI.post(request, :curb).body)
@@ -16,6 +16,11 @@ module OpenstackBridge
     end
 
     private
+
+    def tokens_url(host)
+      host.end_with?('tokens') ? host : File.join(host, 'tokens')
+    end
+
     def auth_hash
       {
         "auth" => {

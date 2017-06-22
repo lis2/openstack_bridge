@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    openstack_bridge (1.0.0)
+    openstack_bridge (1.0.1)
       curb
       httpi
       json

@@ -1,11 +1,9 @@
 module OpenstackBridge
   class Container < Struct.new(:swift, :container)
     def exists?(name)
-      begin
-        swift.request(:head, file_path(name)).code == 200
-      rescue OpenstackBridge::Error
-        false
-      end
+      (200..299).include? swift.request(:head, file_path(name)).code
+    rescue OpenstackBridge::Error
+      false
     end
 
     def objects
@@ -25,6 +23,7 @@ module OpenstackBridge
     end
 
     private
+
     def container_path
       "#{swift.end_point}/#{container}"
     end
