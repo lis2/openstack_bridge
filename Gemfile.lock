@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    openstack_bridge (0.0.4)
+    openstack_bridge (1.0.0)
       curb
       httpi
       json
@@ -12,12 +12,13 @@ GEM
     addressable (2.3.6)
     crack (0.4.2)
       safe_yaml (~> 1.0.0)
-    curb (0.8.5)
+    curb (0.9.3)
     diff-lcs (1.2.5)
-    httpi (2.2.4)
+    httpi (2.4.2)
       rack
-    json (1.8.1)
-    rack (1.5.2)
+      socksify
+    json (2.1.0)
+    rack (2.0.3)
     rake (10.3.2)
     rspec (3.0.0)
       rspec-core (~> 3.0.0)
@@ -32,6 +33,7 @@ GEM
       rspec-support (~> 3.0.0)
     rspec-support (3.0.1)
     safe_yaml (1.0.3)
+    socksify (1.7.1)
     vcr (2.9.2)
     webmock (1.17.4)
       addressable (>= 2.2.7)
@@ -47,3 +49,6 @@ DEPENDENCIES
   rspec
   vcr
   webmock
+
+BUNDLED WITH
+   1.13.7

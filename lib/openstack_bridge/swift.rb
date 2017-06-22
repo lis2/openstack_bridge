@@ -1,5 +1,5 @@
 module OpenstackBridge
-  class Swift < Struct.new(:host, :user, :password, :tenant)
+  class Swift < Struct.new(:host, :user, :password, :tenant, :region)
     attr_accessor :authentication
 
     def initialize(*)
@@ -8,8 +8,12 @@ module OpenstackBridge
       raise "Wrong authentication response" if !self.authentication.response || !self.authentication.response['access']
     end
 
+    def end_points
+      self.authentication.response['access']['serviceCatalog'].detect {|s| s['name'] == 'swift'}['endpoints']
+    end
+
     def end_point
-      self.authentication.response['access']['serviceCatalog'].detect {|s| s['name'] == 'swift'}['endpoints'].first['publicURL']
+      (region ? end_points.detect { |end_point| end_point['region'] == region } : end_points.first)['publicURL']
     end
 
     def containers
